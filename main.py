@@ -8,8 +8,8 @@ import datetime
 import pandas as pd
 import pandas_ta as ta
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+with open('token.txt') as file:
+    TOKEN=file.read()
 
 intents = Intents.default()
 intents.message_content = True
@@ -109,7 +109,7 @@ async def check_rsi():
             channel = get_default_channel(guild)
             if channel:
                 
-                await channel.send(f"Latest {symbol} price: {latest_price} USDT, RSI={latest_RSI}")
+                # await channel.send(f"Latest {symbol} price: {latest_price} USDT, RSI={latest_RSI}")
                 current_time = time.time()
                 
                 if latest_RSI>70 and current_time-last_warning_time>=3600:    # waiting until an hour passes since last message to avoid spam
