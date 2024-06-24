@@ -1,6 +1,9 @@
 # solana_bot 
 This is a simple bot that connects to available discord channel and informs  whether RSI indicator for SOL/USD trading pair is below 30 or above 70.
 
+Data is obtained with a help of ByBit API and then processed with pandas and pandas_ta libraries. 
+The bot sends signals to the first channel it has permissions to write to. 
+
 ## Usage
 Bot can be added to a server with a help of a link:
 
