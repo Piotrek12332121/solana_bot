@@ -6,7 +6,7 @@ Bot can be added to a server with a help of a link:
 
 https://discord.com/oauth2/authorize?client_id=1254162765384515615&permissions=2048&integration_type=0&scope=bot
 
-A docker image runs can be downloaded from docker hub:
+A docker image of a bot can be downloaded from docker hub:
 
 https://hub.docker.com/repository/docker/opornypiotrek/solana_bot/general
 
