@@ -8,9 +8,8 @@ import datetime
 import pandas as pd
 import pandas_ta as ta
 
-with open('token.txt') as file:
-    TOKEN=file.read()
-
+import os
+TOKEN=os.getenv("TOKEN")
 intents = Intents.default()
 intents.message_content = True
 
