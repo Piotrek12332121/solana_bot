@@ -11,13 +11,14 @@ https://discord.com/oauth2/authorize?client_id=1254162765384515615&permissions=2
 
 A docker image of a bot can be downloaded from docker hub:
 
-https://hub.docker.com/repository/docker/opornypiotrek/solana_bot/general
+https://hub.docker.com/repository/docker/opornypiotrek/solana_bot2/general
 
 By using command:
 ``` bash
-docker pull opornypiotrek/solana_bot:latest
+docker pull opornypiotrek/solana_bot2:latest
 ``` 
 And then run locally with a help of command:
 ``` bash
-docker run solana_bot
-``` 
+docker run solana_bot2
+```
+Alternatively, docker desktop can be used to conveniently download and run container.
